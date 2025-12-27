@@ -1,24 +1,50 @@
+# -----------------------
+# Node / Backend
+# -----------------------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files (VERY IMPORTANT)
+.env*
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build / Output
+dist/
+build/
+tmp/
+temp/
+.cache/
+
 # Logs
 logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+logs/*
+debug.log
+error.log
 
-node_modules
-dist
-dist-ssr
-*.local
+# Coverage reports
+coverage/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Local database / runtime
+data/
+*.pid
+
+# -----------------------
+# React (Vite) specific
+# -----------------------
+*.local
+vite.config.ts.timestamp-*
+.vite/
